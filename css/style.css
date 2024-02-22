@@ -178,7 +178,6 @@ a,
 a:hover,
 a:focus,
 a:active {
-    text-decoration: none;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     outline: none;
@@ -496,6 +495,9 @@ ol {
     position: relative;
     z-index: -1;
     margin-bottom: 80px;
+}
+.zindex-1{
+    z-index: 1000;
 }
 
 .section-heading h2 {
@@ -1257,6 +1259,7 @@ p.artficial:before{
 ***/
 .features{
     position: relative;
+    z-index: 0;
 }
 .services-block-four{
   position:relative;
@@ -1641,7 +1644,7 @@ p.artficial:before{
     display: flex;
 }
 .token-info .info-wrapper {
-    border: 1px solid #25cbd3;
+    box-shadow: 0 0 5px #4B96CE;
     border-radius: 10px;
     padding: 19px 36px;
     padding-left: 65px;
@@ -1653,6 +1656,7 @@ p.artficial:before{
     display: -ms-flexbox;
     display: flex;
 }
+
 .info-wrapper .token-icon {
     left: 20px;
     width: 30px;
@@ -1665,13 +1669,28 @@ p.artficial:before{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.info-wrapper .token-icon .icon-smaller {
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    transform: translateY(-50%);
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .info-wrapper .token-descr {
     display: block;
-    font-size: 16px;
-    color: #fff;
+    font-size: 15px;
+    color: #CDC5B1;
     padding-left: 10px;
     font-weight: 300;
     line-height: 1.25;
+}
+.info-wrapper .token-descr .exact-value {
+    color: #fff;
 }
 /* ##### Service Area CSS ##### */
 
@@ -2387,7 +2406,9 @@ p.artficial:before{
 .portfolio-menu button.active {
     color: #fff;
 }
-
+.a {
+    color: #4B96CE !important;
+}
 .port-more-view > a {
     color: #fff;
 }
@@ -3003,6 +3024,11 @@ textarea:required {
     margin-right: 15px;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+}
+@media (max-width: 992px){
+    .footer-social-info a i {
+        margin-bottom: 20px;
+    }
 }
 
 .footer-social-info a i:hover {
