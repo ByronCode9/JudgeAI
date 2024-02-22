@@ -714,6 +714,9 @@ img {
     .ml-3{
         margin-left: 5px!important;
     }
+    .dark.breakpoint-on .classy-navbar .classy-menu {
+        height: 70vh;
+    }
   }
 
 @media (max-width: 1200px){
