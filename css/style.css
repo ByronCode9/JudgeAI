@@ -945,11 +945,47 @@ ol {
     margin-bottom: 0;
 }
 
-@media (min-width: 1200px){
+@media (max-width: 1200px){
     .main-ilustration {
         min-width: 690px;
         margin-left: -100px;
         margin-top: 50px;
+    }
+    .welcome-content h1 {
+        font-size: 2rem!important;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    .welcome-content{
+        margin-top:0!important;
+    }
+    .hero-content{
+        height: 80%;
+    }
+}
+@media (max-width: 991px){
+    .welcome-content p{
+        font-size: 0.8rem;
+    }
+    .hero-content{
+        height: 60%;
+        margin-top:100px!important;
+    }
+}
+@media (max-width: 769px){
+    .hero-content{
+        height: 40% !important;
+    }
+}
+@media (max-width: 600px){
+    .action-btn{
+        margin-left: 0;
+        font-size: 0.9rem !important;
+    }
+}
+@media (max-width: 500px){
+    .welcome_area{
+        height: 500px !important;
     }
 }
 
@@ -967,7 +1003,7 @@ ol {
     font-size: 38px
 }
 .welcome-content p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: 'Syne Mono';
     color: #fff;
     margin-bottom: 30px;
@@ -1277,6 +1313,11 @@ p.artficial:before{
     .service-img-wrapper .image-box .rings {
         left: 17% !important;
         width: 66%;
+    }
+}
+@media (min-width: 767px){
+    .service-img-wrapper .phone-img{
+        height: 80vh;
     }
 }
 
