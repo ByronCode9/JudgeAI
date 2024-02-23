@@ -663,6 +663,31 @@ ol {
     border-color: #4c4d4f;
     margin-left: 40px;
 }
+.hero-btn {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 1.2rem !important;
+    text-transform: uppercase;
+    line-height: 3rem;
+    padding: 0 30px;
+    width: 220px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid;
+    letter-spacing: 1px;
+    border-color: #4c4d4f;
+}
+@media (max-width: 768px){
+    .hero-btn{
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 539px){
+    .dream-btn-group{
+        padding-bottom: 100px !important;
+    }
+}
 
 .start-btn:hover,
 .start-btn:focus,
@@ -987,7 +1012,12 @@ ol {
 }
 @media (max-width: 500px){
     .welcome_area{
-        height: 500px !important;
+        height: 700px !important;
+    }
+}
+@media (max-width: 450px){
+    .welcome_area{
+        height:700px !important;
     }
 }
 
@@ -1135,6 +1165,12 @@ p.artficial:before{
     }
   .fullscreen-bg__video {
     display: none;
+  }
+  .hero-btn{
+    font-size: 0.8rem !important;
+    width: 180px;
+    height: 40px;
+    line-height: 2.4rem !important;
   }
 }
 .video-bg-illution{
@@ -3642,8 +3678,13 @@ textarea:required {
     height: 100vh !important;
 }
 @media only screen and (max-width: 991px) and (min-width: 768px){
-    .welcome_area.ico{
-        height: 1200px !important
+    .welcome_area{
+        height: 900px !important
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 991px){
+    .welcome_area{
+        height: 500px !important
     }
 }
 /* ##### Slider Area CSS ##### */
