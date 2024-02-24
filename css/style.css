@@ -692,7 +692,9 @@ ol {
 .start-btn:hover,
 .start-btn:focus,
 .action-btn:hover,
-.action-btn:focus {
+.action-btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
     color: #fff;
     border-color: #fff;
 }
@@ -3063,6 +3065,12 @@ textarea:required {
 @media (max-width: 992px){
     .footer-social-info a i {
         margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px){
+    .footer-social-info {
+        margin-bottom: 20px;
+        display: none;
     }
 }
 
